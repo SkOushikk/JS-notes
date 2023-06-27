@@ -1,0 +1,12 @@
+DOM- Document Object Model
+first we need to create a divs with the color buttons 
+=> it needs to be set with (id)
+=> inorder to loop them we need to set class to  all the color divs and (whats the value to print) 
+        squares.forEach(square=>{
+               console.log(square.value)
+        }) 
+=> inorder to print how many times you clicket the button 
+    we need to create an empty object 
+        const TimesClicked={'red':0,'yellow':0,'blue':0}
+        
+    

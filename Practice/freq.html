@@ -1,0 +1,60 @@
+<script>
+
+  //LETTER FREQUENCY  
+    const LetterFrequency=(phrase)=>
+    {
+        console.log(phrase)
+        let frequency={}
+        for(const letter of phrase)
+        {
+            if(letter in frequency)
+            {
+                //frequency[letter]+=1
+                    // or
+                frequency[letter]++
+            }
+            else{
+                frequency[letter]=1
+            }
+        }
+        return frequency
+    }
+    let phrase=('sandu sai koushik')
+    //console.log(LetterFrequency(phrase))
+
+//////////////////////////////////////////////////////////////////////////
+    
+      //word frequency
+
+    // const WordFrequency=(phrase)=>
+    //  {
+    //    let frequency={}
+    //    words = phrase.split(' ')
+    //    for(word of words)
+    //    {
+    //     if(word in frequency)
+    //     {
+    //         frequency[word]+=1
+    //     }
+    //     else{
+    //         frequency[word]=1
+    //     }
+    //    }
+    //    console.log(words)
+    //    return frequency
+    //  }
+    //  console.log(WordFrequency('haha this is haha yo yo yo'))
+                        //or//
+            ////////////////////////////////
+        ///////////////////////////////////////////////////////////
+        
+         //word frequency
+
+    const WordFrequency=(phrase)=>
+     {
+       
+       const words = phrase.split(' ')
+       return LetterFrequency(words)
+     }
+     console.log(WordFrequency('haha this is haha yo yo yo'))
+</script>

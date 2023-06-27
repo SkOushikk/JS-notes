@@ -1,0 +1,54 @@
+<script>
+
+    //MAPS - loops and returns an array
+                        // let result=[1,2,3,4].map(number=>number*2)
+                        // console.log(result)
+
+            //double number in an array             
+            //   const doubleMap=(numbers)=>
+            //   {
+            //      return numbers.map(number=>number*2)
+            //   }
+            //     console.log(doubleMap([1,2,3,4]))
+            
+            //squares
+            const doubleMap=(numbers)=>
+            {
+                return numbers.map(number=>number**2)
+            }
+            //console.log(doubleMap([1,2,3,]))
+    
+    //FILTERS - filter([1,2,3,4,5,6],3) ->[4,5,6]
+      //loops and returns array with matching conditions
+       const filter=(numbers,greaterthan)=>
+       {
+         return numbers.filter(number=>number>greaterthan)
+       }
+       //console.log(filter([1,2,3,4,5,6],3))
+
+    //////////////////////////////////////////////////////////////
+       //reduce takes in a function as an argument 
+       //reduce loops  and gives  you back the accumulator
+
+            // const nums=[1,2,3,4,5]
+            // console.log(nums)
+
+            // // const res=nums.reduce(function(prev,curr){
+            // //   // console.log(next)
+            // //   return prev+curr
+            // // })
+            //                     // or
+            //     let res=nums.reduce((prev,curr)=>prev+curr)
+            //     console.log(res)
+    
+    /////////////////////////////////////////////////////////////
+        const sum=(a,b)=> a+b
+        const mul=(a,b)=> a*b
+        const nums=[1,2,3,4]
+        const result= nums.reduce(sum) 
+                  //or//
+        // const result=nums.reduce((a,b)=>a+b)
+        console.log(result)
+
+
+</script>
