@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f2f2f2;
+    }
+
+    .dog-img {
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .dog-img img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+<body>
+    <div class="dog-div">
+        <span><h1>THIS GENERATES DOGS IMAGES</h1></span>
+          <button id="dog-generator">NEW DOG</button>
+          <!-- This is where the dog image will be displayed -->
+          <div id="dog-img">
+             <img src="" alt="">
+          </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
